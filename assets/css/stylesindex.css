@@ -1,0 +1,18 @@
+
+form{
+    border: none;
+}
+input{
+    border:double;
+    border-radius: 5px;
+}
+input:focus {
+    background-color: rgba(0, 94, 255, 0.503);
+  }
+  select:focus{
+    background-color: rgba(0, 94, 255, 0.503);
+  }
+  select{
+      border: double;
+      border-radius: 5px;
+  }

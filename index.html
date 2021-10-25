@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/stylesindex.css">
+    <title>Contablito 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Página principal</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="help.html">Ayuda</a>
+              </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0 h1">Contablito</p>
+                    <footer class="blockquote-footer text-right">By <cite title="Source Title">Nicolás, Carolina &
+                            Federico</cite></footer>
+                            <footer class="blockquote-footer text-right">For <cite title="Source Title" id="bussiensName"> </cite></footer>
+                </blockquote>
+                <br>
+                <h2>Registro de Productos</h2>
+                <form  onSubmit="return false;" class="">
+                    <label>Identificación: <input class="form-control" id="id" type="text" name="Identificación"
+                            required autofocus onkeypress="return event.charCode != 32" ></label>
+                    <label>Nombre: <input class="form-control" id="name" type="text" name="Nombre" min="3" required
+                            autofocus></label>
+
+                    <label>Descripción: <input class="form-control" id="description" type="text" name="descripcion"
+                            required autofocus></label>
+                    <label>Cantidad en Stock: <input class="form-control" id="stockCount" type="number" name="cantStock"
+                            min="0" required autofocus> </label>
+
+                    <label>Precio del Producto: <input class="form-control" id="price" type="number" name="precio"
+                            min="0" required autofocus></label>
+
+                    <br>
+                    <br>
+                    <input type="submit" id="registerButton" class="btn-success" value="Registrar">
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <table id="tablaProduct" class="table table-bordered">
+
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Id Producto </th>
+                                <th>Nombre </th>
+                                <th>Stock </th>
+                                <th>Precio Unitario </th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoTabla">
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2>Registro de Compra/Venta</h2>
+        <form>
+            <label>
+                Tipo Transacción:
+                <select class="form-control" name="menu">
+                    <option value="0">...</option>
+                    <option value="1">Compra</option>
+                    <option value="2">Venta</option>
+                </select>
+
+                Tipo de IVA:
+                <select class="form-control" name="menuIVA">
+                    <option value="0">...</option>
+                    <option value="bas">Básico</option>
+                    <option value="min">Mínimo</option>
+                    <option value="exc">Exento</option>
+                </select>
+                <br>
+                <br>
+
+                <label>Fecha <input class="form-control" type="date" id="fecha" name="fecha"> </label>
+                <label>Producto: <input id="producto" class="form-control" type="text" name="producto" min="0" required
+                        autofocus></label>
+                <label>Cantidad de Producto: <input class="form-control" id="cantProducto" type="number"
+                        name="cantProducto" min="0" required autofocus></label>
+            </label>
+            <h4 id="subtotal">Subtotal:</h4>
+            <h4 id="IVA">IVA:</h4>
+            <h4 id="total">Total:</h4>
+            <input type="button" id="botonRegistroCV" class="btn-success" value="Registrar">
+        </form>
+        <br>
+        <hr>
+        <br>
+        <table id="tablaTrans" class="table table-bordered">
+
+
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Fecha </th>
+                    <th scope="col">Tipo Transaccion </th>
+                    <th scope="col">Producto </th>
+                    <th>Cantidad </th>
+                    <th>Precio Unitario </th>
+                    <th>Subtotal </th>
+                    <th>IVA </th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <!-- Usar innerHTML 
+        <tr> 
+            <td> data </td>
+        </tr> -->
+        </table>
+    </div>
+</body>
+<script src="/assets/js/script.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
