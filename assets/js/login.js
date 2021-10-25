@@ -1,8 +1,8 @@
 
 function login () {
     if(document.getElementById("password").value && document.getElementById("username").value){
-    debugger
-       console.log(login)
+
+
         window.location = "index.html"
 
     }
@@ -16,7 +16,4 @@ else {
 
 
 
-document.getElementById("loginButton").addEventListener("click", (e) => {
-    login()
-   
-})
+document.getElementById("loginButton").addEventListener("click", login)
