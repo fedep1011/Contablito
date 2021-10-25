@@ -95,18 +95,18 @@
 </style>
 </head>
 <body>
-<div class="text-center">
-	<!-- Button HTML (to Trigger Modal) -->
-	<a href="#myModal" class="trigger-btn" data-toggle="modal">Haga click para ingresar</a>
+<div class="text-center col">
+
+	<a href="#loginModal" style="margin-top: 25%;" class=" btn btn-primary login-btn" data-toggle="modal">Haga click para ingresar</a>
 </div>
 
-<!-- Modal HTML -->
-<div id="myModal" class="modal fade">
+
+<div id="loginModal" class="modal fade">
 	<div class="modal-dialog modal-login">
 		<div class="modal-content">
 			<div class="modal-header">
 				<div class="avatar">
-					<!-- <img src="/examples/images/avatar.png" alt="Avatar"> -->
+					<img src="img/C_Logo.png" alt="Avatar">
 				</div>				
 				<h4 class="modal-title">Ingreso de Empresa</h4>	
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -120,7 +120,7 @@
 						<input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required="required">	
 					</div>        
 					<div id="errorMessage" class="form-group">
-						<button type="submit" id="loginButton" class="btn btn-primary btn-lg btn-block login-btn">Entrar</button>
+						<button type="button" id="loginButton" class="btn btn-primary btn-lg btn-block login-btn">Entrar</button>
                         
 					</div>
 				</form>
@@ -132,8 +132,8 @@
 
 
 </body>
-<!-- <script src="/assets/js/script.js"></script> -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="/assets/js/login.js"></script>
+<script src="../js/login.js"></script>
 </html>

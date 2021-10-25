@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/stylesindex.css">
+    <link rel="stylesheet" href="/css/stylesindex.css">
     <title>Contablito 2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
+            aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            
         </button>
-  
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Página principal</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="FAQs.html">FAQs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="help.html">Ayuda</a>
-              </li>
+        <a class="navbar-brand" href="#">
+            <img src="/img/C_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Contablito
+          </a>
+        <div class="collapse navbar-collapse justify-content-md-center" style="padding-right: 10% ;" id="navBar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">Ayuda</a>
+                </li>
 
-          </ul>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
     <div class="container mt-3">
         <div class="row">
@@ -40,13 +46,14 @@
                     <p class="mb-0 h1">Contablito</p>
                     <footer class="blockquote-footer text-right">By <cite title="Source Title">Nicolás, Carolina &
                             Federico</cite></footer>
-                            <footer class="blockquote-footer text-right">For <cite title="Source Title" id="bussiensName"> </cite></footer>
+                    <footer class="blockquote-footer text-right">For <cite title="Source Title" id="bussiensName">
+                        </cite></footer>
                 </blockquote>
                 <br>
                 <h2>Registro de Productos</h2>
-                <form  onSubmit="return false;" class="">
+                <form onSubmit="return false;" class="">
                     <label>Identificación: <input class="form-control" id="id" type="text" name="Identificación"
-                            required autofocus onkeypress="return event.charCode != 32" ></label>
+                            required autofocus onkeypress="return event.charCode != 32"></label>
                     <label>Nombre: <input class="form-control" id="name" type="text" name="Nombre" min="3" required
                             autofocus></label>
 
@@ -60,7 +67,7 @@
 
                     <br>
                     <br>
-                    <input type="submit" id="registerButton" class="btn-success" value="Registrar">
+                    <input type="button" id="registerButton" class="btn-success" value="Registrar">
                 </form>
             </div>
         </div>
@@ -152,10 +159,11 @@
         </table>
     </div>
 </body>
-<script src="/assets/js/script.js"></script>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </html>

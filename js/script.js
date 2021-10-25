@@ -1,3 +1,4 @@
+"use strict";
 let addData1 = []
 
 const saveDataTable1 = () => {
@@ -41,6 +42,8 @@ for(let i = 0; i < allDataTable.length; i++){
 
 
 document.addEventListener("DOMContentLoaded", (a) =>{
+
+document.getElementById("bussiensName").innerHTML = JSON.parse(localStorage.getItem("dataUser"))[0].username
 
         if (JSON.parse(localStorage.getItem("data")) != null){
 
