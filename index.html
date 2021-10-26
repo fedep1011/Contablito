@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesindex.css">
+    <link rel="stylesheet" href="css/stylesindex.css">
     <title>Contablito 2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
             
         </button>
         <a class="navbar-brand" href="#">
-            <img src="/img/C_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="img/C_Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Contablito
           </a>
         <div class="collapse navbar-collapse justify-content-md-center" style="padding-right: 10% ;" id="navBar">
@@ -64,10 +64,10 @@
                 <form onSubmit="return false;" class="">
                     <label>Identificación: <input class="form-control" id="id" type="text" name="Identificación"
                             required autofocus onkeypress="return event.charCode != 32"></label>
-                    <label>Nombre: <input class="form-control" id="name" type="text" name="Nombre" min="3" required
+                    <label>Nombre: <input class="form-control" id="name" type="text" name="Nombre" maxlength="15" min="3" required
                             autofocus></label>
 
-                    <label>Descripción: <input class="form-control" id="description" type="text" name="descripcion"
+                    <label>Descripción: <input class="form-control" id="description" type="text" maxlength="15" name="descripcion"
                             required autofocus></label>
                     <label>Cantidad en Stock: <input class="form-control" id="stockCount" type="number" name="cantStock"
                             min="0" required autofocus> </label>
@@ -169,8 +169,8 @@
         </table>
     </div>
 </body>
-<script src="../js/script.js"></script>
-<script src="/js/themeIndex.js"></script>
+<script src="js/script.js"></script>
+<script src="js/themeIndex.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 </html>

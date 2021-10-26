@@ -1,5 +1,5 @@
 "use strict";
-let addData1 = []
+let addData1 =  JSON.parse(localStorage.getItem("data")) || []
 
 const saveDataTable1 = () => {
 
@@ -8,10 +8,11 @@ const saveDataTable1 = () => {
     let stock = document.getElementById("stockCount").value
     let price = document.getElementById("price").value
 
+    if ( id && name && stock && price) {
     addData1.push({id, name, stock, price})
 
     localStorage.setItem("data", JSON.stringify(addData1))
-}
+}}
 
 
 function addDataTable1 () {

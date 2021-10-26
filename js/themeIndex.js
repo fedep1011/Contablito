@@ -19,7 +19,7 @@ function ligthTheme(){
 
 
 document.addEventListener("DOMContentLoaded", (a) =>{
-    console.log(document.getElementById("theme").checked)
+
    if ( document.getElementById("theme").checked == false){
        ligthTheme()
 
