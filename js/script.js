@@ -43,9 +43,11 @@ for(let i = 0; i < allDataTable.length; i++){
 
 
 document.addEventListener("DOMContentLoaded", (a) =>{
-
+// console.log (JSON.parse(localStorage.getItem("dataUser"))[0].username != null)
+    if (JSON.parse(localStorage.getItem("dataUser")) != null){
 document.getElementById("bussiensName").innerHTML = JSON.parse(localStorage.getItem("dataUser"))[0].username
-
+    }
+    else window.location = "login.html";
         if (JSON.parse(localStorage.getItem("data")) != null){
 
         addDataTable1()
