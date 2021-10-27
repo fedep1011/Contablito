@@ -6,6 +6,7 @@ function darkTheme(){
     document.getElementById("tablaProduct").style.color = "white";
     document.getElementById("footerCreator").style.color = "rgb(149, 147, 147)";
     document.getElementById("footerBussines").style.color = "rgb(149, 147, 147)";
+    document.getElementById("tablaTrans").style.color = "white"
     
 }
 
@@ -15,6 +16,7 @@ function ligthTheme(){
     document.getElementById("tablaProduct").style.color = "black";
     document.getElementById("footerCreator").style.color = "rgb(149, 147, 147)";
     document.getElementById("footerBussines").style.color = "rgb(149, 147, 147)";
+    document.getElementById("tablaTrans").style.color = "black"
 }
 
 

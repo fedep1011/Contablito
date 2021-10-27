@@ -5,7 +5,18 @@ function darkTheme1(){
 
     document.body.style.backgroundColor = "rgb(53, 53, 54)";
     document.body.style.color = "White";
-
+    document.getElementById("darkThemeCard").style.color = "White"
+    document.getElementById("darkThemeCard").style.backgroundColor = "rgb(53, 53, 54)"
+    document.getElementById("backCard").style.color = "White"
+    document.getElementById("backCard").style.backgroundColor = "rgb(65, 65, 65)"
+    document.getElementById("darkThemeCard2").style.color = "White"
+    document.getElementById("darkThemeCard2").style.backgroundColor = "rgb(53, 53, 54)"
+    document.getElementById("backCard2").style.color = "White"
+    document.getElementById("backCard2").style.backgroundColor = "rgb(65, 65, 65)"
+    document.getElementById("darkThemeCard3").style.color = "White"
+    document.getElementById("darkThemeCard3").style.backgroundColor = "rgb(53, 53, 54)"
+    document.getElementById("backCard3").style.color = "White"
+    document.getElementById("backCard3").style.backgroundColor = "rgb(65, 65, 65)"
 }
 
 function ligthTheme1(){

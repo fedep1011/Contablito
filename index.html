@@ -116,18 +116,18 @@
         <form>
             <label>
                 Tipo Transacción:
-                <select class="form-control" name="menu">
+                <select class="form-control" id="type" name="menu">
                     <option value="0">...</option>
-                    <option value="1">Compra</option>
-                    <option value="2">Venta</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Venta">Venta</option>
                 </select>
 
                 Tipo de IVA:
-                <select class="form-control" name="menuIVA">
+                <select class="form-control" id="iva" name="menuIVA">
                     <option value="0">...</option>
-                    <option value="bas">Básico</option>
-                    <option value="min">Mínimo</option>
-                    <option value="exc">Exento</option>
+                    <option value="0.22">Básico</option>
+                    <option value="0.10">Mínimo</option>
+                    <option value="0">Exento</option>
                 </select>
                 <br>
                 <br>
@@ -138,22 +138,25 @@
                 <label>Cantidad de Producto: <input class="form-control" id="cantProducto" type="number"
                         name="cantProducto" min="0" required autofocus></label>
             </label>
-            <h4 id="subtotal">Subtotal:</h4>
-            <h4 id="IVA">IVA:</h4>
-            <h4 id="total">Total:</h4>
+            <label>Precio del Producto: <input class="form-control" id="precioUnitario2" type="number" name="precio"
+                min="0" required autofocus></label>
+
             <input type="button" id="botonRegistroCV" class="btn-success" value="Registrar">
         </form>
         <br>
         <hr>
         <br>
+
+    <div class="row">
+        <div class="col">
         <table id="tablaTrans" class="table table-bordered">
 
 
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Fecha </th>
-                    <th scope="col">Tipo Transaccion </th>
-                    <th scope="col">Producto </th>
+                    <th>Fecha </th>
+                    <th>Tipo Transaccion </th>
+                    <th>Producto </th>
                     <th>Cantidad </th>
                     <th>Precio Unitario </th>
                     <th>Subtotal </th>
@@ -161,13 +164,12 @@
                     <th>Total</th>
                 </tr>
             </thead>
+            <tbody id="cuerpoTabla2">
 
-            <!-- Usar innerHTML 
-        <tr> 
-            <td> data </td>
-        </tr> -->
+            </tbody>
         </table>
     </div>
+</div>
 </body>
 <script src="js/script.js"></script>
 <script src="js/themeIndex.js"></script>
